@@ -6,7 +6,6 @@
 <title>Aarvya Labs — Premium Websites &amp; Digital Experiences</title>
 <meta name="description" content="Aarvya Labs builds modern websites, web applications and AI-powered digital experiences for ambitious businesses.">
 
-<!-- Open Graph -->
 <meta property="og:title" content="Aarvya Labs — Premium Websites &amp; Digital Experiences">
 <meta property="og:description" content="Aarvya Labs builds modern websites, web applications and AI-powered digital experiences for ambitious businesses.">
 <meta property="og:type" content="website">
@@ -14,8 +13,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://aarvyalabs.com/">
 
-<!-- Favicon -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B0C0E'/%3E%3Cpath d='M16 6 L25 24 H20.5 L16 14.5 L11.5 24 H7 Z' fill='%233E6DF6'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,12 +23,17 @@
 </head>
 <body data-theme="dark">
 
+<a class="skip-link" href="#top-content">Skip to content</a>
+
 <!-- ============ NAVIGATION ============ -->
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a href="#top" class="nav-logo" aria-label="Aarvya Labs — home">
-      <svg class="nav-mark" width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <path d="M16 6 L25 24 H20.5 L16 14.5 L11.5 24 H7 Z" fill="currentColor"/>
+      <svg class="nav-mark" width="24" height="24" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M9 40 L22 12" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"/>
+        <path d="M26 12 L39 40" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"/>
+        <path d="M15 28 L33 28" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"/>
+        <path d="M24 5 L29 10 L24 15 L19 10 Z" fill="currentColor"/>
       </svg>
       <span>Aarvya Labs</span>
     </a>
@@ -60,12 +63,12 @@
 <!-- ============ MOBILE MENU ============ -->
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <nav class="mobile-menu-links" aria-label="Mobile">
-    <a href="#work" data-index="01">Work</a>
-    <a href="#services" data-index="02">Services</a>
-    <a href="#pricing" data-index="03">Pricing</a>
-    <a href="#process" data-index="04">Process</a>
-    <a href="#about" data-index="05">About</a>
-    <a href="#contact" data-index="06">Contact</a>
+    <a href="#work"><span class="mm-index">01</span>Work</a>
+    <a href="#services"><span class="mm-index">02</span>Services</a>
+    <a href="#pricing"><span class="mm-index">03</span>Pricing</a>
+    <a href="#process"><span class="mm-index">04</span>Process</a>
+    <a href="#about"><span class="mm-index">05</span>About</a>
+    <a href="#contact"><span class="mm-index">06</span>Contact</a>
   </nav>
   <a href="#contact" class="btn btn-primary btn-block">Start a Project</a>
   <div class="mobile-menu-foot">
@@ -77,6 +80,7 @@
 </div>
 
 <main id="top">
+  <div id="top-content"></div>
 
   <!-- ============ HERO ============ -->
   <section class="hero">
@@ -87,27 +91,77 @@
           Premium websites.<br>
           <span class="hero-headline-accent">Without the premium price.</span>
         </h1>
-        <p class="hero-sub reveal">We design and build fast, modern digital experiences for businesses ready to grow online.</p>
+        <p class="hero-sub reveal">We design and build modern websites and digital experiences for businesses ready to grow online.</p>
         <div class="hero-actions reveal">
           <a href="#contact" class="btn btn-primary">Start a Project</a>
-          <a href="#work" class="btn btn-ghost">Explore Our Work</a>
+          <a href="#work" class="btn btn-ghost">View Our Work</a>
         </div>
         <p class="hero-price reveal">Websites starting at <strong>₹999</strong></p>
       </div>
 
-      <div class="hero-visual reveal" aria-hidden="true">
-        <svg class="mark-svg" viewBox="0 0 320 320" fill="none">
-          <path id="markPath" d="M160 60 L255 250 H208 L160 152 L112 250 H65 Z" stroke="currentColor" stroke-width="2" fill="none"/>
-        </svg>
-        <div class="mark-stages">
-          <span class="stage" data-stage="0">Idea</span>
-          <span class="stage" data-stage="1">Design</span>
-          <span class="stage" data-stage="2">Build</span>
-          <span class="stage" data-stage="3">Launch</span>
+      <div class="build-frame reveal" aria-hidden="true">
+        <div class="build-frame-bar">
+          <span></span><span></span><span></span>
+          <span class="build-frame-url">aarvyalabs.com</span>
+        </div>
+        <div class="build-frame-canvas">
+          <div class="bf-block bf-nav"></div>
+          <div class="bf-block bf-hero"></div>
+          <div class="bf-row">
+            <div class="bf-block"></div>
+            <div class="bf-block"></div>
+            <div class="bf-block"></div>
+          </div>
+        </div>
+        <div class="build-frame-caption">
+          <span class="bf-stage" data-i="0">Idea</span>
+          <span class="bf-stage" data-i="1">Design</span>
+          <span class="bf-stage" data-i="2">Build</span>
+          <span class="bf-stage" data-i="3">Launch</span>
         </div>
       </div>
     </div>
-    <div class="hero-scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============ CAPABILITY TICKER ============ -->
+  <div class="capability-ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Websites</span><span class="ti-sep">—</span><span>Landing Pages</span><span class="ti-sep">—</span><span>Web Applications</span><span class="ti-sep">—</span><span>AI Solutions</span><span class="ti-sep">—</span><span>UI/UX &amp; Digital Products</span><span class="ti-sep">—</span>
+      <span>Websites</span><span class="ti-sep">—</span><span>Landing Pages</span><span class="ti-sep">—</span><span>Web Applications</span><span class="ti-sep">—</span><span>AI Solutions</span><span class="ti-sep">—</span><span>UI/UX &amp; Digital Products</span><span class="ti-sep">—</span>
+    </div>
+  </div>
+
+  <!-- ============ TRUST / VALUE STRIP ============ -->
+  <section class="trust-strip">
+    <div class="container trust-strip-grid">
+      <div class="trust-item reveal">
+        <h3>Design-first</h3>
+        <p>Every project starts with how it should look and feel, not just what pages it needs.</p>
+      </div>
+      <div class="trust-item reveal">
+        <h3>Fast execution</h3>
+        <p>Short feedback loops and quick turnarounds, without cutting corners on quality.</p>
+      </div>
+      <div class="trust-item reveal">
+        <h3>Modern technology</h3>
+        <p>Lean, current tooling that keeps sites fast, maintainable and easy to extend.</p>
+      </div>
+      <div class="trust-item reveal">
+        <h3>Accessible pricing</h3>
+        <p>Premium design work priced for businesses that are just getting started online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SELECTED WORK ============ -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <p class="eyebrow reveal">Selected work</p>
+      <h2 class="section-title reveal">A few concepts, done properly.</h2>
+      <p class="section-sub reveal">Quality over quantity — each one labelled honestly as a concept.</p>
+    </div>
+
+    <div class="work-grid" id="workGrid"></div>
   </section>
 
   <!-- ============ SERVICES ============ -->
@@ -118,49 +172,25 @@
     </div>
 
     <div class="services-list">
-      <article class="service-row reveal">
-        <span class="service-num">01</span>
-        <div class="service-body">
-          <h3>Websites</h3>
-          <p>Business and marketing sites that load fast, read clearly, and make a strong first impression.</p>
-        </div>
-        <div class="service-visual" data-visual="websites" aria-hidden="true"><span></span><span></span><span></span></div>
+      <article class="service-row">
+        <h3><span class="service-num">01</span>Websites</h3>
+        <div class="service-body"><p>Business and marketing sites that load fast, read clearly, and make a strong first impression.</p></div>
       </article>
-
-      <article class="service-row reveal">
-        <span class="service-num">02</span>
-        <div class="service-body">
-          <h3>Web Applications</h3>
-          <p>Interactive tools and dashboards built around how your business actually works.</p>
-        </div>
-        <div class="service-visual" data-visual="webapps" aria-hidden="true"><span></span><span></span><span></span></div>
+      <article class="service-row">
+        <h3><span class="service-num">02</span>Landing Pages</h3>
+        <div class="service-body"><p>Focused, high-converting single pages built around one clear goal — a launch, a campaign, an offer.</p></div>
       </article>
-
-      <article class="service-row reveal">
-        <span class="service-num">03</span>
-        <div class="service-body">
-          <h3>AI Solutions</h3>
-          <p>Practical AI features — assistants, automation, and smart interactions — added where they earn their place.</p>
-        </div>
-        <div class="service-visual" data-visual="ai" aria-hidden="true"><span></span><span></span><span></span></div>
+      <article class="service-row">
+        <h3><span class="service-num">03</span>Web Applications</h3>
+        <div class="service-body"><p>Interactive tools and dashboards built around how your business actually works.</p></div>
       </article>
-
-      <article class="service-row reveal">
-        <span class="service-num">04</span>
-        <div class="service-body">
-          <h3>Product Design</h3>
-          <p>UI/UX for products people use every day — clear flows, considered detail, and a system that scales.</p>
-        </div>
-        <div class="service-visual" data-visual="design" aria-hidden="true"><span></span><span></span><span></span></div>
+      <article class="service-row">
+        <h3><span class="service-num">04</span>AI Solutions</h3>
+        <div class="service-body"><p>Practical AI features — assistants, automation, and smart interactions — added where they earn their place.</p></div>
       </article>
-
-      <article class="service-row reveal">
-        <span class="service-num">05</span>
-        <div class="service-body">
-          <h3>SaaS &amp; Digital Products</h3>
-          <p>End-to-end builds for products meant to grow — from first prototype to a version customers can pay for.</p>
-        </div>
-        <div class="service-visual" data-visual="saas" aria-hidden="true"><span></span><span></span><span></span></div>
+      <article class="service-row">
+        <h3><span class="service-num">05</span>UI/UX &amp; Digital Products</h3>
+        <div class="service-body"><p>Product design and end-to-end builds for digital products meant to grow.</p></div>
       </article>
     </div>
   </section>
@@ -169,8 +199,8 @@
   <section class="pricing" id="pricing">
     <div class="section-head">
       <p class="eyebrow reveal">Pricing</p>
-      <h2 class="section-title reveal">Start small.<br>Build bigger.</h2>
-      <p class="section-sub reveal">Choose what fits your business today. Scale when you're ready.</p>
+      <h2 class="section-title reveal">Start small.<br>Build when you're ready.</h2>
+      <p class="section-sub reveal">Choose what fits your business today. Scale when you need more.</p>
     </div>
 
     <div class="pricing-grid" id="pricingGrid"></div>
@@ -182,7 +212,7 @@
 
     <div class="hosting-faq reveal">
       <h3>Why domain &amp; hosting are separate</h3>
-      <p class="hosting-faq-lead">Domain and hosting are separate because you should own your digital assets.</p>
+      <p class="hosting-faq-lead">Domain and hosting are separate so you retain ownership of your digital assets.</p>
       <div class="hosting-faq-grid">
         <div>
           <span class="hosting-faq-label">Website development</span>
@@ -200,55 +230,20 @@
     </div>
   </section>
 
-  <!-- ============ SELECTED CONCEPTS / WORK ============ -->
-  <section class="work" id="work">
-    <div class="section-head">
-      <p class="eyebrow reveal">Selected concepts</p>
-      <h2 class="section-title reveal">See what we can build.</h2>
-      <p class="section-sub reveal">Explore our industry concepts.</p>
-    </div>
-
-    <div class="work-grid" id="workGrid"></div>
-  </section>
-
   <!-- ============ WHY AARVYA ============ -->
   <section class="why" id="why">
     <div class="section-head">
-      <p class="eyebrow reveal">Why Aarvya</p>
-      <h2 class="section-title reveal">Agency quality.<br>Without agency overhead.</h2>
+      <p class="eyebrow reveal">Why work with us</p>
+      <h2 class="section-title reveal">Professional output. No agency overhead.</h2>
     </div>
 
     <div class="why-grid">
-      <div class="why-item reveal">
-        <span class="why-index">01</span>
-        <h3>Personal attention</h3>
-        <p>You work directly with the person building your site — no account managers in between.</p>
-      </div>
-      <div class="why-item reveal">
-        <span class="why-index">02</span>
-        <h3>Design-first approach</h3>
-        <p>Every project starts with how it should look and feel, not just what pages it needs.</p>
-      </div>
-      <div class="why-item reveal">
-        <span class="why-index">03</span>
-        <h3>Modern technology</h3>
-        <p>Lean, current tooling that keeps sites fast and easy to maintain.</p>
-      </div>
-      <div class="why-item reveal">
-        <span class="why-index">04</span>
-        <h3>AI-assisted development</h3>
-        <p>AI speeds up the build, so more time goes into the details that actually matter.</p>
-      </div>
-      <div class="why-item reveal">
-        <span class="why-index">05</span>
-        <h3>Fast iteration</h3>
-        <p>Quick turnarounds and short feedback loops, without cutting corners on quality.</p>
-      </div>
-      <div class="why-item reveal">
-        <span class="why-index">06</span>
-        <h3>Accessible pricing</h3>
-        <p>Premium design work priced for businesses that are just getting started online.</p>
-      </div>
+      <div class="why-item"><h3>Design-first thinking</h3><p>Visual direction comes before code, so the site looks intentional, not assembled.</p></div>
+      <div class="why-item"><h3>Modern development</h3><p>Clean, current, dependency-light builds that stay fast and easy to maintain.</p></div>
+      <div class="why-item"><h3>AI-assisted workflows</h3><p>AI speeds up the build, so more time goes into the details that actually matter.</p></div>
+      <div class="why-item"><h3>Direct communication</h3><p>You talk to the person building your site — no account managers in between.</p></div>
+      <div class="why-item"><h3>Fast iteration</h3><p>Quick turnarounds and short feedback loops, without cutting corners.</p></div>
+      <div class="why-item"><h3>Accessible pricing</h3><p>Premium design work priced for businesses just getting started online.</p></div>
     </div>
   </section>
 
@@ -261,31 +256,11 @@
 
     <div class="process-track">
       <div class="process-line" aria-hidden="true"></div>
-      <div class="process-step reveal">
-        <span class="process-num">01</span>
-        <h3>Discover</h3>
-        <p>We learn about your business, your customers, and what the site needs to do.</p>
-      </div>
-      <div class="process-step reveal">
-        <span class="process-num">02</span>
-        <h3>Plan</h3>
-        <p>Scope, structure and content are mapped out before any design work begins.</p>
-      </div>
-      <div class="process-step reveal">
-        <span class="process-num">03</span>
-        <h3>Design</h3>
-        <p>A visual direction is built around your brand, then refined with your input.</p>
-      </div>
-      <div class="process-step reveal">
-        <span class="process-num">04</span>
-        <h3>Build</h3>
-        <p>The design is developed into a fast, responsive, working website.</p>
-      </div>
-      <div class="process-step reveal">
-        <span class="process-num">05</span>
-        <h3>Launch</h3>
-        <p>Your site goes live, tested and ready for real visitors.</p>
-      </div>
+      <div class="process-step"><span class="process-num">01</span><h3>Discover</h3><p>We learn about your business, your customers, and what the site needs to do.</p></div>
+      <div class="process-step"><span class="process-num">02</span><h3>Plan</h3><p>Scope, structure and content are mapped out before any design work begins.</p></div>
+      <div class="process-step"><span class="process-num">03</span><h3>Design</h3><p>A visual direction is built around your brand, then refined with your input.</p></div>
+      <div class="process-step"><span class="process-num">04</span><h3>Build</h3><p>The design is developed into a fast, responsive, working website.</p></div>
+      <div class="process-step"><span class="process-num">05</span><h3>Launch</h3><p>Your site goes live, tested and ready for real visitors.</p></div>
     </div>
   </section>
 
@@ -294,35 +269,32 @@
     <div class="about-grid">
       <div class="about-copy reveal">
         <p class="eyebrow">About</p>
-        <h2 class="section-title">A studio for turning ideas into something real.</h2>
-        <p>Aarvya Labs is a modern technology studio focused on turning ideas into useful, beautiful digital experiences. We work across design, technology and AI — treating every project as a product, not just a page.</p>
-        <p>Our approach stays close to the craft: careful typography, considered motion, and interfaces that feel deliberate rather than templated. The goal is always the same — a website you'd be proud to send to a customer.</p>
+        <h2 class="section-title">A modern digital studio.</h2>
+        <p>Aarvya Labs is a modern digital studio focused on building thoughtful websites, digital products and AI-assisted experiences. Every project is treated as a product, not just a page.</p>
+        <p>The approach stays close to the craft: careful typography, considered motion, and interfaces that feel deliberate rather than templated.</p>
+        <div class="about-tags">
+          <span>Design</span><span>Technology</span><span>AI</span><span>Product thinking</span>
+        </div>
       </div>
-      <div class="about-pillars reveal">
-        <div class="pillar"><span>Design</span></div>
-        <div class="pillar"><span>Technology</span></div>
-        <div class="pillar"><span>AI</span></div>
-        <div class="pillar"><span>Product thinking</span></div>
+      <div class="about-side reveal">
+        <div class="about-side-figure">₹999+</div>
+        <p>Entry pricing for a first website — with room to grow into larger builds as your business does.</p>
       </div>
     </div>
   </section>
 
   <!-- ============ LAB ============ -->
   <section class="lab" id="lab">
-    <div class="section-head">
+    <div class="lab-inner">
       <p class="eyebrow reveal">The lab</p>
       <h2 class="section-title reveal">More than websites.</h2>
-      <p class="section-sub reveal">Aarvya Labs also experiments with AI tools, web applications, SaaS and digital products — built to test ideas, then shipped when they hold up.</p>
-    </div>
-
-    <div class="lab-flow reveal">
-      <div class="lab-node"><span>Idea</span></div>
-      <div class="lab-arrow" aria-hidden="true"></div>
-      <div class="lab-node"><span>Experiment</span></div>
-      <div class="lab-arrow" aria-hidden="true"></div>
-      <div class="lab-node"><span>Prototype</span></div>
-      <div class="lab-arrow" aria-hidden="true"></div>
-      <div class="lab-node lab-node-final"><span>Product</span></div>
+      <p class="lab-lead reveal">Aarvya Labs also experiments with AI tools, web applications and digital products — built to test ideas, then shipped when they hold up.</p>
+      <div class="lab-flow reveal">
+        <span class="lab-node">Idea</span><span class="lab-sep"></span>
+        <span class="lab-node">Experiment</span><span class="lab-sep"></span>
+        <span class="lab-node">Prototype</span><span class="lab-sep"></span>
+        <span class="lab-node is-final">Product</span>
+      </div>
     </div>
   </section>
 
@@ -334,42 +306,67 @@
       <p class="section-sub reveal">A few quick steps — takes about a minute.</p>
     </div>
 
-    <form class="project-form reveal" id="projectForm" novalidate>
-      <div class="form-progress" aria-hidden="true">
-        <span class="form-progress-fill" id="formProgressFill"></span>
-      </div>
-      <p class="form-step-label" id="formStepLabel">Step 1 of 6</p>
+    <form class="project-form reveal" id="projectForm" novalidate
+      action="https://formspree.io/f/xnpawqyo" method="POST">
+      <div class="form-progress" aria-hidden="true"><span class="form-progress-fill" id="formProgressFill"></span></div>
+      <p class="form-step-label" id="formStepLabel">Step 1 of 8</p>
 
-      <!-- Step 1: Name -->
       <div class="form-step" data-step="1">
         <label for="fName">What's your name?</label>
-        <input type="text" id="fName" name="name" autocomplete="name" placeholder="Your full name">
+        <input type="text" id="fName" name="name" autocomplete="name" placeholder="Your full name" required>
         <span class="form-error" id="err-fName" role="alert"></span>
       </div>
 
-      <!-- Step 2: Business -->
       <div class="form-step" data-step="2" hidden>
         <label for="fBusiness">What's your business called?</label>
-        <input type="text" id="fBusiness" name="business" autocomplete="organization" placeholder="Business or brand name">
+        <input type="text" id="fBusiness" name="business" autocomplete="organization" placeholder="Business or brand name (optional)">
         <span class="form-error" id="err-fBusiness" role="alert"></span>
       </div>
 
-      <!-- Step 3: What do you need -->
       <div class="form-step" data-step="3" hidden>
+        <label for="fEmail">Email</label>
+        <input type="email" id="fEmail" name="email" autocomplete="email" placeholder="you@business.com" required>
+        <span class="form-error" id="err-fEmail" role="alert"></span>
+      </div>
+
+      <div class="form-step" data-step="4" hidden>
+        <label for="fPhone">WhatsApp / phone number</label>
+        <input type="tel" id="fPhone" name="phone" autocomplete="tel" placeholder="+91 90000 00000 (optional)">
+        <span class="form-error" id="err-fPhone" role="alert"></span>
+      </div>
+
+      <div class="form-step" data-step="5" hidden>
+        <label>Industry</label>
+        <div class="option-grid" data-field="industry">
+          <button type="button" class="option-chip" data-value="Healthcare / Clinic">Healthcare / Clinic</button>
+          <button type="button" class="option-chip" data-value="Dental">Dental</button>
+          <button type="button" class="option-chip" data-value="Fitness / Gym">Fitness / Gym</button>
+          <button type="button" class="option-chip" data-value="Restaurant / Café">Restaurant / Café</button>
+          <button type="button" class="option-chip" data-value="Salon / Beauty">Salon / Beauty</button>
+          <button type="button" class="option-chip" data-value="Education">Education</button>
+          <button type="button" class="option-chip" data-value="Real Estate">Real Estate</button>
+          <button type="button" class="option-chip" data-value="Other">Other</button>
+        </div>
+        <input type="hidden" id="fIndustry" name="industry">
+        <span class="form-error" id="err-industry" role="alert"></span>
+      </div>
+
+      <div class="form-step" data-step="6" hidden>
         <label>What do you need?</label>
-        <div class="option-grid" data-field="need">
-          <button type="button" class="option-chip" data-value="Website">Website</button>
-          <button type="button" class="option-chip" data-value="Web App">Web App</button>
+        <div class="option-grid" data-field="projectType">
+          <button type="button" class="option-chip" data-value="Business Website">Business Website</button>
+          <button type="button" class="option-chip" data-value="Landing Page">Landing Page</button>
+          <button type="button" class="option-chip" data-value="Web Application">Web Application</button>
+          <button type="button" class="option-chip" data-value="E-commerce">E-commerce</button>
           <button type="button" class="option-chip" data-value="AI Solution">AI Solution</button>
-          <button type="button" class="option-chip" data-value="SaaS / Product">SaaS/Product</button>
           <button type="button" class="option-chip" data-value="UI/UX">UI/UX</button>
           <button type="button" class="option-chip" data-value="Other">Other</button>
         </div>
-        <span class="form-error" id="err-need" role="alert"></span>
+        <input type="hidden" id="fProjectType" name="project_type">
+        <span class="form-error" id="err-projectType" role="alert"></span>
       </div>
 
-      <!-- Step 4: Budget -->
-      <div class="form-step" data-step="4" hidden>
+      <div class="form-step" data-step="7" hidden>
         <label>What's your budget?</label>
         <div class="option-grid option-grid-col" data-field="budget">
           <button type="button" class="option-chip" data-value="₹999–₹3,999">₹999 – ₹3,999</button>
@@ -378,23 +375,14 @@
           <button type="button" class="option-chip" data-value="₹13,000+">₹13,000+</button>
           <button type="button" class="option-chip" data-value="Not sure yet">Not sure yet</button>
         </div>
+        <input type="hidden" id="fBudget" name="budget">
         <span class="form-error" id="err-budget" role="alert"></span>
       </div>
 
-      <!-- Step 5: Description -->
-      <div class="form-step" data-step="5" hidden>
+      <div class="form-step" data-step="8" hidden>
         <label for="fDescription">Tell us a bit about the project</label>
-        <textarea id="fDescription" name="description" rows="4" placeholder="What are you trying to build?"></textarea>
+        <textarea id="fDescription" name="description" rows="4" placeholder="What are you trying to build?" required></textarea>
         <span class="form-error" id="err-fDescription" role="alert"></span>
-      </div>
-
-      <!-- Step 6: Contact -->
-      <div class="form-step" data-step="6" hidden>
-        <label for="fEmail">Email</label>
-        <input type="email" id="fEmail" name="email" autocomplete="email" placeholder="you@business.com">
-        <span class="form-error" id="err-fEmail" role="alert"></span>
-        <label for="fWhatsapp">WhatsApp number (optional)</label>
-        <input type="tel" id="fWhatsapp" name="whatsapp" autocomplete="tel" placeholder="+91 90000 00000">
       </div>
 
       <div class="form-nav">
@@ -407,19 +395,37 @@
       </div>
 
       <div class="form-result form-success" id="formSuccess" role="status" hidden>
-        <h3>Thanks — that's in.</h3>
-        <p>This is a demo submission. Once connected to Formspree, EmailJS or a backend, your project brief will land straight in our inbox.</p>
+        <h3>We've got it.</h3>
+        <p>Thanks for telling us about your project. We'll review the details and get back to you shortly.</p>
       </div>
       <div class="form-result form-fail" id="formFail" role="alert" hidden>
         <h3>Something went wrong.</h3>
-        <p>Please check your details and try again, or reach us directly on WhatsApp.</p>
+        <p>Please try again, or contact us directly below.</p>
       </div>
     </form>
+
+    <div class="contact-alternatives reveal">
+      <a href="https://wa.me/919844325466" target="_blank" rel="noopener" class="alt-link" id="altWhatsapp">
+        <span class="alt-label">WhatsApp</span><span class="alt-value">+91 98443 25466</span>
+      </a>
+      <a href="tel:+919844325466" class="alt-link" id="altCall">
+        <span class="alt-label">Call</span><span class="alt-value">+91 98443 25466</span>
+      </a>
+      <a href="mailto:aarvyalabs@gmail.com" class="alt-link" id="altEmail">
+        <span class="alt-label">Email</span><span class="alt-value">aarvyalabs@gmail.com</span>
+      </a>
+      <a href="https://instagram.com/aarvyalabs" target="_blank" rel="noopener" class="alt-link" id="altInstagram">
+        <span class="alt-label">Instagram</span><span class="alt-value">@aarvyalabs</span>
+      </a>
+      <a href="https://www.linkedin.com/in/achyuth-uday-61a513319" target="_blank" rel="noopener" class="alt-link" id="altLinkedin">
+        <span class="alt-label">LinkedIn</span><span class="alt-value">Connect →</span>
+      </a>
+    </div>
   </section>
 
   <!-- ============ FINAL CTA ============ -->
   <section class="final-cta">
-    <h2 class="reveal">Have an idea worth building?</h2>
+    <h2 class="reveal">Have something worth building?</h2>
     <p class="reveal">Tell us what you're working on. We'll help turn it into something real.</p>
     <div class="final-cta-actions reveal">
       <a href="#contact" class="btn btn-primary">Start a Project</a>
@@ -445,9 +451,11 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="footer-social">
-      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:hello@aarvyalabs.com">Email</a>
+      <a href="https://instagram.com/aarvyalabs" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/achyuth-uday-61a513319" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/achyuthbuday-gif" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:aarvyalabs@gmail.com">Email</a>
+      <a href="tel:+919844325466">+91 98443 25466</a>
     </div>
   </div>
   <div class="footer-bottom">
